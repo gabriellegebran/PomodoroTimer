@@ -1,24 +1,44 @@
-# Winter Break Projects
+# Pomodoro Timer (Tkinter)
 
-This repository contains projects I am building during my winter break to
-develop practical skills for software engineering and machine learning internships.
+A simple Pomodoro Timer desktop application built with Python and Tkinter. This app helps improve focus and productvity by alternating between work sessions and breaks using the Pomodoro Technique.
 
-## Projects
+## Features
+- 25-minute Pomodoro timer
+- 5-minute short break
+- 15-minute long break (after every 4 Pomodoros)
+- Pomodoro counter
+- Skip current timer
+- Reset all timers
+- Uses threading to prevent UI freezing
+- Clean tab-based interface using ttk.Notebook
 
-### 1. Hello Python
-A simple Python script to verify my development environment and GitHub workflow.
+## Technologies Used
+- Python 3
+- Tkinter (GUI)
+- ttk (styled widgets)
+- threading
+- time
 
-**Technologies**
-- Python
+## How It Works
+- The app detects which tab is selected to determine the timer type
+- When a Pomodoro finishes:
+    - The Pomodoro counter increases
+    - A long break starts every 4 Pomodoros, otherwise a short break starts
+- Timers automatically chain into the next session
+- Threading ensures the GUI stays responsive while the timer runs
 
-**What I learned**
-- Running Python scripts from the terminal
-- Using Git and GitHub to track and upload code
+## Future improvements
+- Customizable timer lengths
+- Sound notifications
+- Pause/resume button
 
----
+## Learning Purpose
+This project was created to practice:
+- Python GUI development
+- Threading in desktop applications
+- Event-driven programming
+- Object-oriented design
 
-## Skills Being Developed
-- Python programming
-- Git & GitHub
-- Linux / Terminal usage
-- Problem-solving and debugging
+## License
+This project is open-sourced and free to use for learning purposes
+
