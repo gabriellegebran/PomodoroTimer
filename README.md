@@ -1,5 +1,4 @@
 # Pomodoro Timer (Tkinter)
-
 A simple Pomodoro Timer desktop application built with Python and Tkinter. This app helps improve focus and productvity by alternating between work sessions and breaks using the Pomodoro Technique.
 
 ## Features
